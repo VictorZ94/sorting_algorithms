@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *tmp, *aux;
 	short flag = 0;
 
-	if (!*list || !list)
+	if (!list || !*list)
 		return;
 	if (listint_len(*list) < 2)
 		return;
