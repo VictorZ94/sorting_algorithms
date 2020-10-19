@@ -22,5 +22,7 @@ void swap_numbers(int *a, int *b);
 listint_t *create_listint(const int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void node_swap(listint_t *left, listint_t *right);
+size_t listint_len(const listint_t *h);
 
 #endif /* End guards sorting and searching algorithms */
