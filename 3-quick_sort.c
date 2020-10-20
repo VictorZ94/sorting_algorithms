@@ -37,7 +37,6 @@ void quicksort_mod(int *array, int low, size_t high, size_t size)
 	}
 }
 
-
 /**
  * swap - function to swap two number
  * @a: first number to swap
@@ -67,8 +66,9 @@ size_t partition(int *array, int low, size_t high, size_t size)
 {
 	int pivot = array[high];
 	int i = (low - 1);
+	int j;
 
-	for (int j = low; j < (int)high; j++)
+	for (j = low; j < (int)high; j++)
 	{
 		if (array[j] <= pivot)
 		{
