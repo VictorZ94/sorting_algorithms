@@ -10,6 +10,9 @@ void quick_sort(int *array, size_t size)
 {
 	int low = 0;
 
+	if (size < 2)
+		return;
+
 	quicksort_mod(array, low, size - 1, size);
 }
 
@@ -25,9 +28,6 @@ void quick_sort(int *array, size_t size)
 void quicksort_mod(int *array, int low, size_t high, size_t size)
 {
 	int pi;
-
-	if (size < 2)
-		return;
 
 	if (low < (int)high)
 	{
