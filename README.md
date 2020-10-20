@@ -1,1 +1,2 @@
-# sorting_algorithms
+# Sorting and Searching Algortihm and Big-O
+
