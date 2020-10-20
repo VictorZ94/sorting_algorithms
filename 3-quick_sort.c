@@ -37,6 +37,23 @@ void quicksort_mod(int *array, int low, size_t high, size_t size)
 	}
 }
 
+
+/**
+ * swap - function to swap two number
+ * @a: first number to swap
+ * @b: second number to swap
+ *
+ * Return: Nothing
+ */
+void swap(int *a, int *b)
+{
+	int change = 0;
+
+	change = *a;
+	*a = *b;
+	*b = change;
+}
+
 /**
  * partition - function to give a pivot number
  * @array: element to sort
@@ -58,31 +75,15 @@ size_t partition(int *array, int low, size_t high, size_t size)
 			i++;
 			if (array[i] != array[j])
 			{
-				swap_numbers(&array[i], &array[j]);
+				swap(&array[i], &array[j]);
 				print_array(array, size);
 			}
 		}
 	}
 	if (array[i + 1] != array[high])
 	{
-		swap_numbers(&array[i + 1], &array[high]);
+		swap(&array[i + 1], &array[high]);
 		print_array(array, size);
 	}
 	return (i + 1);
-}
-
-/**
- * swap_numbers - function to swap two number
- * @a: first number to swap
- * @b: second number to swap
- *
- * Return: Nothing
- */
-void swap_numbers(int *a, int *b)
-{
-	int change = 0;
-
-	change = *a;
-	*a = *b;
-	*b = change;
 }
