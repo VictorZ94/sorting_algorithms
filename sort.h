@@ -34,5 +34,6 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quicksort_mod(int *array, int low, size_t high, size_t size);
 size_t partition(int *array, int low, size_t high, size_t size);
+void swap(int *a, int *b);
 
 #endif /* End guards sorting and searching algorithms */
