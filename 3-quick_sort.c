@@ -57,7 +57,10 @@ size_t partition(int *array, int low, size_t high, size_t size)
 		{
 			i++;
 			if (array[i] != array[j])
+			{
 				swap_numbers(&array[i], &array[j]);
+				print_array(array, size);
+			}
 		}
 	}
 	if (array[i + 1] != array[high])
