@@ -15,12 +15,6 @@ void heap_sort(int *array, size_t size)
         if (array == NULL)
                 return;
 
-        if (check_sort(array, (int)size))
-	{
-		print_array(array, size);
-                return;
-	}
-
         for (i = size / 2 - 1; i >= 0; i--)
                 shift_down(array, size, i, size);
 
