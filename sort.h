@@ -39,4 +39,11 @@ void swap(int *a, int *b);
 /*** Shellsort ****/
 void shell_sort(int *array, size_t size);
 
+/*** Heap sort ***/
+void heap_sort(int *array, size_t size);
+void shift_down(int *array, int size, int i, int size_array);
+void swap_int(int *a, int *b);
+int check_sort(int *array, int size);
+
+
 #endif /* End guards sorting and searching algorithms */
